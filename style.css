@@ -5,11 +5,16 @@ body {
 
 #images {
 	width: 300px;
-	height: 300px;
+	height: 250px;
+	margin-top: 2em;
 }
 
 .cardx {
 	margin-top: 1em;
+	width: 212px;
+	height: 200px;
+	border: 3px solid #dc3545;
+	border-radius: 5px;
 }
 
 .cardx:first-child {
@@ -32,7 +37,7 @@ button {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 3.2rem;
 	font-family: 'Monoton', cursive;
 	color: whitesmoke;
 	margin-top: 0.5em;
@@ -40,33 +45,29 @@ h1 {
 }
 
 h2 {
-	display: inline;
-	position: fixed;
-	top: 260px;
-	color: white;
-	font-size: 2rem;
+	color: whitesmoke;
 	font-family: 'Carter One', cursive;
 }
 
-.remaining {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+.deckleft {
 	color: white;
 	font-family: 'Carter One', cursive;
-	padding: 1em;
+}
+
+.titlesbox {
+	width: 300px;
+	height: 50px;
+	position: relative;
+	top: 60px;
 }
 
 @media (min-width: 600px) {
 	#images {
 		width: 500px;
-		height: 500px;
+		height: 350px;
 	}
 
 	.cardx {
-		margin-top: 5em;
 		width: 212px;
 		height: 293px;
 		border: 3px solid #dc3545;
@@ -91,5 +92,11 @@ h2 {
 	.mybtn {
 		font-size: 1.8rem !important;
 		font-family: 'Carter One', cursive;
+	}
+	.titlesbox {
+		width: 500px;
+		height: 50px;
+		position: relative;
+		top: 55px;
 	}
 }
