@@ -1,0 +1,73 @@
+body {
+	background-image: url('images/backgorund.jpeg');
+	background-size: cover;
+}
+
+#images {
+	width: 300px;
+	height: 300px;
+}
+
+.cardx {
+	margin-top: 1em;
+}
+
+.cardx:first-child {
+	margin-right: 0.5em;
+}
+
+.btncont {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	width: 100%;
+}
+
+.mybtn {
+	font-size: 1rem !important;
+	font-family: 'Carter One', cursive;
+}
+
+h1 {
+	font-size: 3rem;
+	font-family: 'Monoton', cursive;
+	color: whitesmoke;
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	#images {
+		width: 500px;
+		height: 500px;
+	}
+
+	.cardx {
+		margin-top: 5em;
+	}
+
+	.cardx:first-child {
+		margin-right: 4em;
+	}
+
+	.btncont {
+		width: 500px;
+	}
+
+	h1 {
+		font-size: 8rem;
+		font-family: 'Monoton', cursive;
+		color: whitesmoke;
+		margin-top: 0.5em;
+	}
+
+	.mybtn {
+		font-size: 1.8rem !important;
+		font-family: 'Carter One', cursive;
+	}
+}
+
+
