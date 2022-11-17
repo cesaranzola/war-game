@@ -50,9 +50,12 @@ function fetchCard() {
 				render(data);
 				cardsLeft(data);
 				addPoints(data);
+				titlesbox.innerHTML = scoreTitles();
 			} else {
 				draw.setAttribute('disabled', '');
 				cardsLeft(data);
+				computer = 0
+				player = 0
 
 				setTimeout(() => {
 					renderWinner();
@@ -83,10 +86,8 @@ function addPoints(data) {
 
 	if (card1Index > card2Index) {
 		computer++;
-		points1.innerHTML = computer;
 	} else if (card2Index > card1Index) {
 		player++;
-		points2.innerHTML = player;
 	}
 }
 
@@ -112,11 +113,11 @@ function cardsLeft(data) {
 function scoreTitles() {
 	return `<h2 class="sdtitlecom">
 							Computer:
-							<span id="points1">0</span>
+							<span id="points1">${computer}</span>
 						</h2>
 						<h2 class="sdtitleme">
 							Me:
-							<span id="points2">0</span>
+							<span id="points2">${player}</span>
 						</h2>`;
 }
 
